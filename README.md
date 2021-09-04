@@ -2,17 +2,19 @@
 
 python logging wrapper module.  
 It wraps logging standard module to be able to use in multi-thread coding and lets you to use logging easily.  
-jplogger module includes concrete class as log.  
+jplogger module includes just one class as log.  
 all messages in the module are wirrten as japanese so the module named as jplogger.
 
 
 # Usage
 
-## import
+## import and instaiciate
 
 ```
 # jploggerを環境変数PYTHONPATHに通すこと
 from hideakih_homeunix_net.jplogger import jplogger
+# ログクラス生成
+log = jplogger(jplogger.debug)
 ```
 
 ## set output handler
@@ -43,8 +45,10 @@ log.logError('対象ファイルが見つかりません: ' + str(file_path.reso
 # class method
 |method|description|example|
 |-|-|-|
-|log(jplogger.priority, str)|log str as priority <br> jplogger.priority as follows: debug,info,notice,warning,error,critical|log.log(jplogger.info, 'info msg')|
-|logError(str)|log str as error|log.logError('error msg')|
+|jplogger(jplogger.priority)|constructor to set default log level<br> jplogger.priority as follows: debug,info,notice,warning,error,critical|jplogger(jpllogger.debug)|
+|addStdOutHandler(handler)
+|log(jplogger.priority, str_msg)|log str_msg as priority <br> jplogger.priority is same as jplogger() |log.log(jplogger.info, 'info msg')|
+|logError(¥[str¥]msg)|log ¥[str¥]msg as error|log.logError('error msg')|
 
 
 # Copyright
