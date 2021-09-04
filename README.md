@@ -5,7 +5,7 @@ It wraps logging standard module and lets you use logging easily.
 Multi-logging(handler) with severity supported(SRY. NOW IN DEVELOPPING).  
 ex. stdout(notice) and file(info). stdout(info), stderr(warning) and file(debug)  etc...  
 
-jplogger module includes just one class as jplogger.  
+jplogger module includes just one class of "jplogger".  
 all messages in module are wirrten as japanese so the module named as jplogger.  
 
 
