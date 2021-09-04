@@ -66,7 +66,7 @@ log.logError('対象ファイルが見つかりません: ' + str(file_path.reso
 
 
 # Copyright
-It's copyrighted under MIT license.
-Just import and/or revise as you like and let it contribute your works.
+It's copyrighted under MIT license.  
+Just import and/or revise as you like and let it contribute your works.  
 
 hideakih@nac.homeunix.net
