@@ -50,7 +50,7 @@ log.logError('対象ファイルが見つかりません: ' + str(file_path.reso
 |jplogger(jplogger.priority)|constructor to set default log level<br> jplogger.priority as follows: debug,info,notice,warning,error,critical|jplogger(jpllogger.debug)|
 |addStdOutHandler(handler)
 |log(jplogger.priority, str_msg)|log str_msg as priority <br> jplogger.priority is same as jplogger() |log.log(jplogger.info, 'info msg')|
-|logError(¥[str¥]msg)|log ¥[str¥]msg as error|log.logError('error msg')|
+|logError([str]msg)|log [str]msg as error|log.logError('error msg')|
 
 
 # Copyright
