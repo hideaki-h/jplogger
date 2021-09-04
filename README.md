@@ -35,6 +35,7 @@ log.logError('対象ファイルが見つかりません: ' + str(file_path.reso
 
 # class method
 |method|description|example|
+|-|-|-|
 |log(jplogger.priority, str)|log str as priority¥njplogger.priority as follows: debug,info,notice,warning,error|log.log(jplogger.info, 'info msg'|
 |logError(str)|log str as error|log.logError('error msg')|
 
