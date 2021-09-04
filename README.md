@@ -1,9 +1,11 @@
 # jplogger
 
 python logging wrapper module.  
-It wraps logging standard module to be able to use in multi-thread coding and lets you to use logging easily.  
-jplogger module includes just one class as log.  
-all messages in the module are wirrten as japanese so the module named as jplogger.
+It wraps logging standard module and lets you use logging easily.  
+Multi-logging(handler) with severity supported. ex. stdout(notice) and file(info). stdout(info), stderr(warning) and file(debug)  etc...  
+
+jplogger module includes just one class as jplogger.  
+all messages in the module are wirrten as japanese so the module named as jplogger.  
 
 
 # Usage
@@ -53,6 +55,6 @@ log.logError('対象ファイルが見つかりません: ' + str(file_path.reso
 
 # Copyright
 It's copyrighted under MIT license.
-Just import as you like.
+Just import and/or revise as you like and let it contribute your works.
 
 hideakih@nac.homeunix.net
