@@ -10,8 +10,8 @@ all messages in the module are wirrten as japanese so the module named as jplogg
 
 ## import
 
-# jploggerを環境変数PYTHONPATHに通すこと
 ```
+# jploggerを環境変数PYTHONPATHに通すこと
 from hideakih_homeunix_net.jplogger import jplogger
 ```
 
