@@ -47,10 +47,11 @@ log.logError('対象ファイルが見つかりません: ' + str(file_path.reso
 # class method
 |method|description|example|
 |-|-|-|
-|jplogger(jplogger.priority)|constructor to set default log level<br> jplogger.priority as follows: debug,info,notice,warning,error,critical|jplogger(jpllogger.debug)|
-|addStdOutHandler(handler)
-|log(jplogger.priority, str_msg)|log str_msg as priority <br> jplogger.priority is same as jplogger() |log.log(jplogger.info, 'info msg')|
-|logError([str]msg)|log [str]msg as error|log.logError('error msg')|
+|jplogger([jplogger.priority]priority)|constructor to set default log level as priority <br> jplogger.priority as follows: debug,info,notice,warning,error,critical|log = jplogger(jpllogger.debug)|
+|addStdOutHandler([string]handler, [jplogger.priority]priority)|add new stdout loghandler as handler with priority to decide to output log by calling log* method as shown below. <br> hanlder is unique name|log.addStdOutHandler('uniquename_for_stdout', jplogger.info)|
+|setHandlerLevelByString([string]handler, [string]priority)|set log level of handler specified to priority <br> priority is same "String"  introduced in jplogger()|setHandlerLevelByString('uniqename_for_stdout', 'NOTICE')|
+|log([jplogger.priority]priority, [string]msg)|log str_msg as priority <br> jplogger.priority is same as jplogger() |log.log(jplogger.info, 'info msg')|
+|logError([string]msg)|log msg as error|log.logError('error msg')|
 
 
 # Copyright
