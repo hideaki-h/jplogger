@@ -32,3 +32,9 @@ log.log(jplogger.info,'対象ファイルパス: ' + str(file_path.resolve()))
 ```
 log.logError('対象ファイルが見つかりません: ' + str(file_path.resolve()))
 ```
+
+# class method
+|method|description|example|
+|log(jplogger.priority, str)|log str as priority¥njplogger.priority as follows: debug,info,notice,warning,error|log.log(jplogger.info, 'info msg'|
+|logError(str)|log str as error|log.logError('error msg')|
+
