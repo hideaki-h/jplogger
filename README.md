@@ -1,1 +1,3 @@
 # jplogger
+
+pythonログライブラリ
