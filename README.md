@@ -25,7 +25,7 @@ if os.environ.get('LOG_LEVEL') is not None:
 ```
 ```
 
-## new logging works
+## now logging works
 ```
 log.log(jplogger.info,'対象ファイルパス: ' + str(file_path.resolve()))
 ```
