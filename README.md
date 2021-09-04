@@ -57,12 +57,12 @@ log.logError('対象ファイルが見つかりません: ' + str(file_path.reso
 |addStdOutHandler([string]HANDLER, [jplogger.priority]PRIORITY)|add new stdout loghandler as HANDLER with hanlder-base PRIORITY to decide to output log by calling log* method as shown below. <br> HANDLER: unique name to specify the handler|log.addStdOutHandler('uniquename_for_stdout', jplogger.info)|
 |setHandlerLevelByString([string]HANDLER, [string]PRIORITY)|set handler-base log level of HANDLER specified to PRIORITY <br> PRIORITY: all upper case string of priority introduced in jplogger()|setHandlerLevelByString('uniqename_for_stdout', 'NOTICE')|
 |log([jplogger.priority]PRIORITY, [string]MSG)|log MSG as PRIORITY.|log.log(jplogger.info, 'info msg')|
-|logCritical([string]MSG)|log MSG as critical.|log.logCritical('error msg')|
+|logCritical([string]MSG)|log MSG as critical.|log.logCritical('critical msg')|
 |logError([string]MSG)|log MSG as error.|log.logError('error msg')|
-|logWarning([string]MSG)|log MSG as warning.|log.logWarning('error msg')|
-|logNotice([string]MSG)|log MSG as notice.|log.logNotice('error msg')|
-|logInfo([string]MSG)|log MSG as info.|log.logInfo('error msg')|
-|logDebug([string]MSG)|log MSG as debug.|log.logDebug('error msg')|
+|logWarning([string]MSG)|log MSG as warning.|log.logWarning('warning msg')|
+|logNotice([string]MSG)|log MSG as notice.|log.logNotice('notice msg')|
+|logInfo([string]MSG)|log MSG as info.|log.logInfo('info msg')|
+|logDebug([string]MSG)|log MSG as debug.|log.logDebug('debug msg')|
 
 
 # Copyright
